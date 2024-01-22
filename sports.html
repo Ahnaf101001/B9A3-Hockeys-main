@@ -16,7 +16,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                primecol: '#FF4240',
               }
             }
           }
@@ -29,53 +29,157 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+<body class="lg:w-[1440px] mx-auto font-manrope">
+    <header class="lg:w-[1170px] mx-auto">
+        <section class="mb-[50px]">
+            <div class="navbar bg-base-100 lg:w-[1170px] mx-auto">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a><span class="text-primecol text-[#131318]">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-[36px] font-extrabold">Hockey<span class="text-primecol">'</span>s</a>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 tetx[16px] font-bold lg:gap-[44px]">
+                    <li><a><span class="text-primecol gap-0 px-0">Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                    <a class="text-[20px] items-center font-bold px-[24px] pt-[15px] pb-[15px] btn bg-primecol text-[#FFF] hover:text-primecol hover:border-primecol hover:bg-transparent">Get Ticket</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
+        </section>
+        <section>
+            <div class="carousel lg:w-[1170px] lg:h-[550px] w-[450px] ml-[30px] mb-[16px] lg:mb-0">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/slide 2.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/slide 3.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/slide 4.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
             </div>
-            <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-                <a class="btn">Button</a>
+            <div class="w-[450px] bg-black rounded-[12px] px-[16px] py-[16px] mx-auto lg:mx-0 lg:relative lg:top-[-160px] lg:left-[720px] mb-[40px]">
+                <h3 class="text-[18px] font-extrabold text-[#FFFFFF]">Meet all the heroes from the field</h3>
+                <p class="text-[14px] font-medium text-[#FFFFFF99]">Embark on a thrilling journey as we unveil the extraordinary stories behind every triumph and challenge that celebrates the resilience and spirit of our athletic champions.</p>
             </div>
-          </div>
+        </section>
+        <hr class="lg:w-[1170px] mx-auto w-[450px] lg:mb-[32px] mb-[24px]">
     </header>
 
-    <main></main>
+    <main>
+        <section class="lg:w-[1170px] mx-auto lg:mb-[100px] mb-[40px]">
+            <div class="flex flex-col mx-auto">
+                <h3 class="text-[#131318] text-[36px] font-extrabold text-center mb-[16px] lg:mb-[24px]">Professional Hockeys Club</h3>
+                <p class="text-[#13131899] text-[16px] font-semibold text-center lg:w-[1170px] lg:px-[282.5px] lg:mb-[32px] mb-[24px]">Experience the adrenaline-pumping intensity and skillful finesse of a premier Professional Hockey Club as they carve their legacy on the icy battlegrounds of competition.</p>
+            </div>
+            <hr class="lg:w-[1170px] mx-auto w-[450px] lg:mb-[48px] mb-[24px]">
+            <div class="flex flex-col lg:flex lg:flex-row lg:space-x-[60px] lg:px-[190px] items-center lg:items-center lg:justify-center space-y-[24px] lg:w-[1170px]">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <h5 class="text-[#131318] text-[20px] font-semibold">Player Facility</h5>
+                    <p class="text-[#13131899] text-[16px] font-normal w-[250px]">A state-of-the-art player facility providing elite athletes with cutting-edge amenities for training, recovery, and performance optimization.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h5 class="text-[#131318] text-[20px] font-semibold">Experienced Coach</h5>
+                    <p class="text-[#13131899] text-[16px] font-normal w-[250px]">A seasoned mentor with a wealth of knowledge and a proven track record, the experienced coach guides teams to excellence with strategic insight and motivational prowess.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h5 class="text-[#131318] text-[20px] font-semibold">Senior Player</h5>
+                    <p class="text-[#13131899] text-[16px] font-normal w-[250px]">A seasoned veteran on the field, the Senior Player brings a wealth of experience, leadership, and unmatched expertise to the game.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h5 class="text-[#131318] text-[20px] font-semibold">Training Ground</h5>
+                    <p class="text-[#13131899] text-[16px] font-normal w-[250px]">The training ground, a crucible of dedication and discipline, shapes aspiring talents into future champions.</p>
+                </div>
+            </div>
+        </section>
+        <hr class="lg:w-[1170px] mx-auto w-[450px] lg:mb-[32px] mb-[24px]">
+        <section class="lg:mb-[100px] mb-[40px]">
+           <div class="lg:w-[1170px] mx-auto text-center">
+            <h3 class="text-[#131318] text-[36px] font-bold lg:mb-[24px] mb-[16px]">Program Sections</h3>
+            <p class="text-[#13131899] text-[16px] font-semibold lg:w-[607px] mx-auto lg:mb-[32px] mb-[24px]">Dive into diverse segments of our program, each meticulously crafted to engage, educate, and entertain, offering a rich tapestry of content for every viewer's preference.</p>
+           </div>
+           <hr class="lg:w-[1170px] mx-auto w-[450px] lg:mb-[48px] mb-[24px]">
+           <div class="flex flex-col justify-center items-center gap-[24px]">
+            <div class="flex flex-col gap-[24px] lg:flex lg:flex-row">
+                <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-[573px]">
+                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-[#FFF] text-[28px] font-extrabold">Junior Program</h2>
+                      <p class="text-[#FFF] text-[16px] font-semiabold">Fueling passion in the next generation of athletes, our Junior Program for sports is a dynamic blend of skill-building and fun, fostering teamwork and a love for the game from an early age.</p>
+                      <div class="card-actions justify-start">
+                        <a class="text-[20px] items-center font-bold px-[24px] pt-[15px] pb-[15px] btn bg-primecol text-[#FFF] border-primecol hover:text-primecol hover:border-primecol hover:bg-transparent">Register Now!</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-[573px]">
+                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-[#FFF] text-[28px] font-extrabold">Teenager Program</h2>
+                      <p class="text-[#FFF] text-[16px] font-semiabold">Empower young athletes with our Teenager Sports Program, fostering skill development, teamwork, and personal growth, as they embark on an exciting journey towards athletic excellence and self-discovery.</p>
+                      <div class="card-actions justify-start">
+                        <a class="text-[20px] items-center font-bold px-[24px] pt-[15px] pb-[15px] btn bg-primecol text-[#FFF] border-primecol hover:text-primecol hover:border-primecol hover:bg-transparent">Register Now!</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl image-full lg:w-[1170px]">
+                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-[#FFF] text-[28px] font-extrabold">Professional Program</h2>
+                      <p class="text-[#FFF] text-[16px] font-semiabold lg:w-[520px]">Elevate your athletic prowess with our Professional Sports Program, designed to hone skills, provide strategic insights, and empower athletes to reach peak performance on and off the field.</p>
+                      <div class="card-actions justify-start">
+                        <a class="text-[20px] items-center font-bold px-[24px] pt-[15px] pb-[15px] btn bg-primecol text-[#FFF] border-primecol hover:text-primecol hover:border-primecol hover:bg-transparent">Register Now!</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <hr class="lg:w-[1170px] mx-auto w-[450px] lg:mb-[32px] mb-[24px]">
+    </main>
 
     <footer></footer>
 </body>
